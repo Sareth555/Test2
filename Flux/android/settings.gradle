@@ -1,0 +1,3 @@
+rootProject.name = 'Flux'
+
+include ':app'
