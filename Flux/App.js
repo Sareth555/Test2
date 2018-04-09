@@ -133,11 +133,6 @@ export default class App extends Component{
                 title = 'Yellow'
               />
             </Scenc>
-
-
-
-
-
               <Scenc key="four" title="Four" icon={FirstTabIcon}>
               <Scenc
                 key='purple'
@@ -150,30 +145,7 @@ export default class App extends Component{
                 title = 'White'
               />
             </Scenc>
-              <Scenc key="five" title="Five" icon={SecondTabIcon}>
-              <Scenc
-                key='yello'
-                component = {YellowScreen}
-                title = 'Yello'
-              />
-              <Scenc
-                key='white'
-                component = {WhiteScreen}
-                title = 'White'
-              />
-            </Scenc>
-            <Scenc key="six" title="Six" icon={ThirdTabIcon}>
-              <Scenc
-                key='black'
-                component = {BlackScreen}
-                title = 'Black'
-              />
-              <Scenc
-                key='white'
-                component = {WhiteScreen}
-                title = 'White'
-              />
-            </Scenc>
+              
 
             {/* <Scenc key="third" title="Five" icon={ThirdTabIcon}>
               <Scenc
