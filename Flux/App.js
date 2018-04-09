@@ -95,12 +95,13 @@ export default class App extends Component{
                 component = {GrayScreen}
                 title = 'Gray'
                 initial
-                onRight={ ()=> alert('Right') }
+                onRight={ ()=> alert('Eye') }
+                rightButtonImage = {require('./App/eye.png')}
                 // rightTitle = "Right"
-                onLeft = {()=>alert('Left')}
+                onLeft = {()=>alert('Menu')}
                 // leftTitle = "Left"
                 leftButtonImage = {require('./App/menu.png')}
-                rightButtonImage = {require('./App/eye.png')}
+                
               />
               <Scenc
                 key='green'
@@ -113,6 +114,10 @@ export default class App extends Component{
                 key='blue'
                 component = {BlueScreen}
                 title = 'Blue'
+                onRight={ ()=> alert('Right') }
+                rightTitle = "Right"
+                onLeft = {()=>alert('Left')}
+                leftTitle = "Left"
               />
               <Scenc
                 key='black'
@@ -145,30 +150,7 @@ export default class App extends Component{
                 title = 'White'
               />
             </Scenc>
-              
-
-            {/* <Scenc key="third" title="Five" icon={ThirdTabIcon}>
-              <Scenc
-                key='gold'
-                component = {GoldScreen}
-                title = 'Gold'
-              />
-              <Scenc
-                key='yellow'
-                component = {YellowScreen}
-                title = 'Yellow'
-              />
-            </Scenc> */}
-           
-
-
-
-
-
-
           </Scenc>
-
-
           <Scenc
             key='modal'
             component = {ModalScreen}
